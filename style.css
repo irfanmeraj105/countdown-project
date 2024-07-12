@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      200deg,
+      rgba(255, 196, 0, 0.895),
+      rgb(255, 149, 0)
+    );
+    color: white;
+  }
+  .countdown {
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.4);
+  }
+  .countdown .timer {
+    display: flex;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 1rem;
+  }
+  .timer .numb {
+    font-weight: 700;
+    font-size: 38px;
+  }
+  .timer .text {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .countdown .timer:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 38px;
+    }
+    .countdown {
+      flex-wrap: wrap;
+    }
+    .timer {
+      max-height: 150px;
+      margin: 20px;
+    }
+  }
+  
